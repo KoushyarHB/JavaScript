@@ -1,0 +1,38 @@
+// Brackets instead of dots for objects lookups
+// From FCC and  Using Objects for Lookups
+//               Testing Objects for Properties
+
+//================================================= Using Objects for Lookups
+
+function phoneticLookup(val) {
+  
+  let result = "";
+
+  const lookup = {
+    "alpha":"Adams",
+    "bravo":"Boston",
+    "charlie":"Chicago",
+    "delta":"Denver",
+    "echo":"Easy",
+    "foxtrot":"Frank"
+  }
+   
+  result = lookup[val];                    //<================ HERE
+  
+  return result;
+}
+
+phoneticLookup("charlie");
+
+//================================================= Testing Objects for Properties
+
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {    
+    return obj[checkProp];                    //<================ AND HERE
+  } else {
+    return "Not Found";
+  }
+}
+
+checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift");
+
