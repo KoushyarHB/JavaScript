@@ -1,3 +1,6 @@
+// Counting Cards in BlackJack
+// FCC JS BASICS
+
 let count = 0;
 
 function cc(card) {
