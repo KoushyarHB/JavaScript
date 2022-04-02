@@ -23,3 +23,22 @@ for (let i2 = 0; i2 < 3; i2++) {
 }
 console.log(printNumTwo2()); // Will return 2
 console.log(i2); // WWill return undefined
+
+// =========================================================================
+
+// In Java, an expression is a line of code that holds some information. 
+// An expression becomes a statement when it then carries out an action on that information or variable. 
+// A block of code holds any number of statements that you need to keep together.
+
+function checkScope() {
+  let i = 'function scope';
+  if (true) {
+    let i = 'block scope';            // By adding let here the scope of the second i is restricted to the if statement 
+    console.log('Block scope i is: ', i);
+  }
+  console.log('Function scope i is: ', i);
+  return i;                           // The function returns function scope
+}
+
+
+
